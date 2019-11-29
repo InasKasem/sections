@@ -1,11 +1,10 @@
 html {
-  font-family: Lato, sans-serif;
+  font-weight: bold;
+  box-sizing: border-box;
   background-color: #eee9de;
   color: #333;
   line-height: 1.5;
   font-size: 1em;
-  font-weight: bold;
-  box-sizing: border-box;
 }
 
 *, *::before, *::after {
@@ -13,16 +12,24 @@ html {
 }
 
 body {
-  text-align: center;
-  margin: 0;
   padding: 0;
+  margin: 0;
+  text-align: center;
   border-width: 0;
 }
 
+div {
+  max-width: 25rem;
+  display: inline-block;
+  padding: 0;
+  margin: 0 .5em;
+  vertical-align: middle;
+}
+
 img {
-  display: block;
   width: 100%;
   max-width: 100%;
+  display: block;
   margin-top: 2em;
 }
 
@@ -39,6 +46,7 @@ img {
 }
 
 h2 {
+  font-family: Lato, sans-serif;
   padding: .5em 0 0;
   margin: 0;
   font-weight: bold;
@@ -59,22 +67,14 @@ a {
   text-decoration: none;
 }
 
-a:hover {
-  background-color: #666;
-  border: medium solid #666;
-  color: #eee9de;
-}
-
 .btn {
   padding: 0;
   margin: 0;
   font-size: 1.1em;
 }
 
-div {
-  display: inline-block;
-  vertical-align: middle;
-  max-width: 25rem;
-  padding: 0;
-  margin: 0 .5em;
+a:hover {
+  background-color: #666;
+  border: medium solid #666;
+  color: #eee9de;
 }
