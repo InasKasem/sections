@@ -1,17 +1,80 @@
 html {
-  font-family: Lato, sans-serif;font-weight: bold;
+  font-family: Lato, sans-serif;
   background-color: #eee9de;
   color: #333;
   line-height: 1.5;
   font-size: 1em;
   font-weight: bold;
+  box-sizing: border-box;
+}
+
+*, *::before, *::after {
+  box-sizing: inherit;
 }
 
 body {
   text-align: center;
+  margin: 0;
+  padding: 0;
+  border-width: 0;
+}
+
+img {
+  display: block;
+  width: 100%;
+  max-width: 100%;
+  margin-top: 2em;
+}
+
+.image {
+  margin: 0;
+  padding: 1em;
+}
+
+.content {
+  margin: 0;
+  padding: 1em;
+  text-align: left;
+  max-width: 25rem;
+}
+
+h2 {
+  padding: .5em 0 0;
+  margin: 0;
+  font-weight: bold;
+}
+
+.paragraph {
+  padding: 2em 0;
+  margin: 0;
+}
+
+a {
+  color: #333;
+  display: inline-block;
+  border: medium solid #333;
+  border-radius: .5em;
+  padding: .4em .75em .53em;
+  margin: 0;
+  text-decoration: none;
+}
+
+a:hover {
+  background-color: #666;
+  border: medium solid #666;
+  color: #eee9de;
+}
+
+.btn {
+  padding: 0;
+  margin: 0;
+  font-size: 1.1em;
 }
 
 div {
   display: inline-block;
   vertical-align: middle;
+  max-width: 25rem;
+  padding: 0;
+  margin: 0 .5em;
 }
